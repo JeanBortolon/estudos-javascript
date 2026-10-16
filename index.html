@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Elementos usados nos exemplos de DOM do script.js -->
+    <h1>Hello World !</h1>
+    <div><nav><li>Item</li></nav></div>
+    <!-- id="input1": o script lê o valor digitado -->
+    <input id="input1" type="text">
+    <!-- id="div1": o script muda a cor, o atributo class e adiciona um <h3> aqui dentro -->
+    <div id="div1" class="classe1">
+        <h2>Tag H2</h2>
+        <p>Tag P</p>
+    </div>
+    <p>Documento HTML Simples</p>
+    <!-- Forma antiga de ligar um evento: atributo onclick chamando uma função do JS.
+         Foi trocada pelo addEventListener no script.js, que mantém o JS fora do HTML -->
+    <!-- <button onclick="buttonClicked()">Me clique para triggar um evento</button> -->
+    <!-- id="button1": o script adiciona os ouvintes de clique -->
+    <button id="button1">Click me</button>
+    <!-- O <script> fica no FIM do body de propósito: assim os elementos acima já existem
+         quando o script.js roda. No <head> seria preciso esperar o DOMContentLoaded
+         (ou usar o atributo defer). Veja a explicação no script.js -->
+    <script src="script.js"></script>
+</body>
+</html>

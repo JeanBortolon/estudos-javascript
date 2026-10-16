@@ -1,0 +1,29 @@
+/* Estudo de seletores CSS.
+   Quando vários seletores atingem o mesmo elemento, vence o de maior
+   especificidade: id (#) > classe (.) > tag.
+   Se empatar, vence o que aparece por último no arquivo.
+
+   ATENÇÃO: o index.html ainda NÃO carrega este arquivo. Para ele ter efeito,
+   adicione no <head>: <link rel="stylesheet" href="style.css"> */
+
+/* Seletor de TAG: afeta todos os elementos <html> (fundo vermelho) */
+html{
+    background-color: red;
+}
+
+/* Seletor de TAG: todas as <div> ficam azuis */
+div{
+    background-color: blue;
+}
+
+/* Seletor de ID (#): só o elemento com id="div1". Sobrescreve o seletor de tag acima (verde) */
+#div1 {
+    background-color: green;
+}
+
+/* Seletor de CLASSE (.): todo elemento com class="classe1".
+   Está depois do #div1, mas o id é mais específico, então o verde continua valendo
+   (a div1 só fica amarela se o JS mexer no estilo em linha, que vence todos) */
+.classe1{
+    background-color: yellow;
+}
